@@ -15,7 +15,7 @@ $color5: white;
   z-index: 10;
 
   .one {
-    animation: fade 0.5s ease-in;
+    animation: fade 1s ease-in;
   }
 
   .two {
@@ -77,6 +77,7 @@ $color5: white;
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
