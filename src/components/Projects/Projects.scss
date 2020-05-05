@@ -102,24 +102,29 @@ $color5: white;
       .active-project-buttons {
         width: 100%;
         display: flex;
+        justify-content: space-between;
 
-        button {
-          height: 4rem;
-          width: 50%;
-          font-size: 1rem;
-          font-weight: 800;
-          background-color: rgba(148, 148, 148, 0.1);
-          border-radius: 10px;
-          border: none;
-          color: white;
-          margin: 1rem;
-          cursor: pointer;
-          outline: none;
-          transition: color 0.25s ease-out;
+        a {
+          width: 45%;
+          padding: 0;
+          margin: 0;
 
-          &:hover {
-            color: $color4;
-            transition: color 0.25s ease-in;
+          button {
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 800;
+            background-color: rgba(148, 148, 148, 0.1);
+            border-radius: 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            outline: none;
+            transition: color 0.25s ease-out;
+
+            &:hover {
+              color: $color4;
+              transition: color 0.25s ease-in;
+            }
           }
         }
       }
