@@ -31,31 +31,6 @@ $color5: white;
   .five {
     animation: fade 4s ease-in;
   }
-  .links {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-
-    .five,
-    .four {
-      width: 45%;
-
-      a {
-        color: $color4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        flex-wrap: wrap;
-
-        svg {
-          fill: $color4;
-          padding: 1rem;
-          transform: scale(2);
-        }
-      }
-    }
-  }
 
   p {
     padding: 1rem 0;
@@ -73,6 +48,52 @@ $color5: white;
       color: $color4;
     }
   }
+
+  .links {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+    .five,
+    .four {
+      border: 3px solid $color4;
+      width: 40%;
+      transition: all 0.3s ease-out;
+
+      a {
+        color: $color4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        text-decoration: none;
+        flex-wrap: wrap;
+        transition: all 0.3s ease-out;
+
+        svg {
+          fill: $color4;
+          padding: 0 1rem;
+          transform: scale(2);
+          transition: all 0.3s ease-out;
+        }
+      }
+
+      &:hover {
+        border: 3px solid white;
+        transition: all 0.3s ease-in;
+
+        a {
+          color: white;
+          transition: all 0.3s ease-in;
+        }
+
+        svg {
+          transition: all 0.3s ease-in;
+          fill: white;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -85,10 +106,20 @@ $color5: white;
 
     .links {
       width: 85%;
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+      justify-content: space-between;
+
       .five,
       .four {
-        padding: 1rem 0;
+        width: 100%;
+        flex-direction: row;
+        font-size: 0.5rem;
+        margin: 1rem 0;
+
         a {
+          height: 70%;
           width: 100%;
           color: $color4;
           font-size: 1rem;
