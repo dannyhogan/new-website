@@ -43,8 +43,10 @@ $color5: white;
       color: white;
       cursor: pointer;
       transition: color 0.25s ease-out;
+      -webkit-tap-highlight-color: transparent;
 
       &:hover {
+        transform: scale(1.025);
         color: $color4;
         transition: color 0.25s ease-in;
       }
