@@ -33,8 +33,12 @@ const Projects = () => {
         <div className="active-project-content">
           <p>{projects[activeIndex].description}</p>
           <div className="active-project-buttons">
-            <button>Deployed</button>
-            <button>GitHub</button>
+            <a target="_blank" href={projects[activeIndex].deployed}>
+              <button>Deployed</button>
+            </a>
+            <a target="_blank" href={projects[activeIndex].github}>
+              <button>GitHub</button>
+            </a>
           </div>
         </div>
       </div>
