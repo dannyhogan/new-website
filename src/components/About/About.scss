@@ -9,7 +9,7 @@ $color5: white;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   animation: fade-down 1s forwards;
   z-index: 10;
@@ -25,26 +25,40 @@ $color5: white;
   .three {
     animation: fade 3s ease-in;
   }
-
   .four {
+    animation: fade 3.5s ease-in;
+  }
+  .five {
     animation: fade 4s ease-in;
+  }
+  .links {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
 
-    a {
-      color: $color4;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
+    .five,
+    .four {
+      width: 45%;
 
-      svg {
-        fill: $color4;
-        padding: 1rem;
-        transform: scale(2);
+      a {
+        color: $color4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+
+        svg {
+          fill: $color4;
+          padding: 1rem;
+          transform: scale(2);
+        }
       }
     }
   }
 
   p {
+    padding: 1rem 0;
     height: max-content;
     width: 60%;
     color: white;
@@ -53,8 +67,7 @@ $color5: white;
     border-radius: 20px;
     background-color: #2c2c3f;
     z-index: 10;
-    padding: 1rem;
-    margin: 1rem 0;
+    margin: 0;
 
     span {
       color: $color4;
@@ -64,9 +77,28 @@ $color5: white;
 
 @media screen and (max-width: 800px) {
   .About {
+    overflow-y: scroll;
     p {
       width: 85%;
       font-size: 0.9rem;
+    }
+
+    .links {
+      width: 85%;
+      .five,
+      .four {
+        padding: 1rem 0;
+        a {
+          width: 100%;
+          color: $color4;
+          font-size: 1rem;
+
+          svg {
+            fill: $color4;
+            transform: scale(2);
+          }
+        }
+      }
     }
   }
 }

@@ -9,7 +9,7 @@ $color5: white;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   z-index: 10000;
   animation: fade-in-down 1s forwards;
   transition: all 2s ease;

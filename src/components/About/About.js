@@ -2,7 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import "./About.scss";
 import { Link } from "react-router-dom";
-import { MdArrowForward } from "react-icons/md";
+import { MdArrowForward, MdPictureAsPdf } from "react-icons/md";
 
 const About = () => {
   return (
@@ -21,12 +21,20 @@ const About = () => {
         I'm currently seeking my next opportunity as a Front-End software
         developer (open to remote opportunities)!
       </p>
-      <p className="four">
-        <Link to="/contact">
-          Let's get in touch!
-          <MdArrowForward />
-        </Link>
-      </p>
+      <div className="links">
+        <p className="four">
+          <a href="">
+            View Resume PDF
+            <MdPictureAsPdf />
+          </a>
+        </p>
+        <p className="five">
+          <Link to="/contact">
+            Let's get in touch!
+            <MdArrowForward />
+          </Link>
+        </p>
+      </div>
     </div>
   );
 };
