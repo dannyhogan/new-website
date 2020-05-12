@@ -23,7 +23,7 @@ const About = () => {
       </p>
       <div className="links">
         <p className="four">
-          <a href="">
+          <a href="https://drive.google.com/file/d/1CT9tnFUEEgWnmOrAytXp7mqxH5_MJRdl/view">
             View Resume
             <MdPictureAsPdf />
           </a>
