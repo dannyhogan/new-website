@@ -37,7 +37,7 @@ const projects = [
     github: "https://github.com/dannyhogan/nasa-pic-of-the-day",
     deployed: "https://nasa-picture-of-the-day.netlify.app/",
     deployedOn: "Netlify",
-    tech: ["React Hooks", "SCSS", "Netlify"],
+    tech: ["React Hooks", "SCSS", "Netlify", "NASA Picture API"],
 
     description:
       "Search through NASA's pictures of the day, going back to 1995!",
