@@ -15,9 +15,7 @@ const AboutMe = () => {
           Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah
           Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah
           Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah
-          Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah
-          Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah
-          Blah blah Blah blah Blah blah
+
         </p>
         <ul>
           <li>List Item 1</li>
