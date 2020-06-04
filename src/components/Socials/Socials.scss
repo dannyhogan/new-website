@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(25, 25, 25, .25);
+  background-color: rgba(25, 25, 25, 0.25);
   border-radius: 10px;
   pointer-events: all;
 
@@ -17,5 +17,13 @@
     fill: white;
     animation: fade-in 2s forwards;
   }
+}
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
