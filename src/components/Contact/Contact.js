@@ -6,6 +6,7 @@ import { GoMail } from "react-icons/go";
 const Contact = () => {
   return (
     <section className="Contact">
+      <h1>Let's Get in Touch!</h1>
       <ul>
         <li className="one">
           <a href="mailto:dannyhogancodes@gmail.com">
@@ -14,21 +15,21 @@ const Contact = () => {
           </a>
         </li>
         <li className="two">
+          <a href="https://www.linkedin.com/in/danny-hogan/">
+            <FaLinkedin />
+            <p>LinkedIn</p>
+          </a>
+        </li>
+        <li className="three">
           <a href="http://www.github.com/dannyhogan">
             <FaGithub />
             <p>github.com/dannyhogan</p>
           </a>
         </li>
-        <li className="three">
+        <li className="four">
           <a href="http://www.github.com/sorry">
             <FaGithub />
             <p>github.com/sorry</p>
-          </a>
-        </li>
-        <li className="four">
-          <a href="https://www.linkedin.com/in/danny-hogan/">
-            <FaLinkedin />
-            <p>LinkedIn</p>
           </a>
         </li>
       </ul>

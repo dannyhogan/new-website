@@ -23,31 +23,52 @@ const Projects = () => {
   const isPrevProject = !!projects[activeIndex - 1];
   const isNextProject = !!projects[activeIndex + 1];
 
-  const ActiveProject = ({ project }) => (
-    <div className={`active-project ${className}`}>
-      <div className="project-title">
-        <h1>{project.title}</h1>
-        <img className="active-project-image" src={project.image} />
-      </div>
-      <div className="active-project-content">
-        <p>{project.description}</p>
-        <div className="active-project-buttons">
-          <a target="_blank" href={project.deployed}>
-            <button>
-              Deployed Site
-              <span>{project.deployedOn}</span>
-            </button>
-          </a>
-          <a target="_blank" href={project.github}>
-            <button>
-              Source Code
-              <span>GitHub</span>
-            </button>
-          </a>
+  const ActiveProject = ({ project }) => {
+    const techItems = project.tech.map((item, i) => (
+      <li className="project-tech-item" key={i}>
+        {item}
+      </li>
+    ));
+
+    return (
+      <div className={`active-project ${className}`}>
+        <h1 className="project-title">{project.title}</h1>
+
+        <div className="project-container">
+
+          <div className="project-image">
+            <img className="active-project-image" src={project.image} />
+          </div>
+
+          <div className="active-project-content">
+
+            <p className="project-description">{project.description}</p>
+
+            <div className="active-project-tech">
+              <ul className="project-tech-list">{techItems}</ul>
+            </div>
+
+            <div className="active-project-buttons">
+              <a target="_blank" href={project.deployed}>
+                <button>
+                  Deployed on
+                  <span>{project.deployedOn}</span>
+                </button>
+              </a>
+              <a target="_blank" href={project.github}>
+                <button>
+                  Source Code
+                  <span>GitHub</span>
+                </button>
+              </a>
+            </div>
+            
+          </div>
+
         </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <section className="Projects">

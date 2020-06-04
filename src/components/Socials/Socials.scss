@@ -1,0 +1,21 @@
+.Socials {
+  margin-top: 1rem;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(25, 25, 25, .25);
+  border-radius: 10px;
+  pointer-events: all;
+
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1rem;
+    border-radius: 15px;
+    fill: white;
+    animation: fade-in 2s forwards;
+  }
+
+}

@@ -10,8 +10,6 @@ $color5: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #212134;
-  z-index: 100;
 
   .header-content {
     width: 75%;
@@ -27,7 +25,7 @@ $color5: white;
     text-align: left;
     display: inline-block;
     font-size: 2.5rem;
-    color: #e43f5a;
+    color: $color3;
     text-align: center;
     padding: 0;
     margin: 0;
