@@ -64,8 +64,8 @@ const Tech = () => {
       class: "four",
       list: [
         {
-          title: "TravisCI",
-          img: Travis,
+          title: "Git",
+          img: Git,
         },
         {
           title: "Heroku",
@@ -76,9 +76,9 @@ const Tech = () => {
           img: Netlify,
         },
         {
-          title: "Git",
-          img: Git,
-        },
+          title: "TravisCI",
+          img: Travis,
+        }
       ],
     },
   ];
