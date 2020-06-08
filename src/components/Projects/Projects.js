@@ -31,6 +31,8 @@ const Projects = () => {
       </li>
     ));
 
+    const newBranch = true;
+
     return (
       <div className={`active-project ${className}`}>
         <h1 className="project-title">{project.title}</h1>
