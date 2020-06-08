@@ -33,6 +33,14 @@
       width: 30rem;
     }
 
+    ul {
+      width: 60%;
+      li {
+        text-align: left;
+        color: white;
+        width: 90%;
+      }
+    }
     .descriptions {
       display: flex;
     }
@@ -70,6 +78,7 @@
         color: white;
         width: 20rem;
       }
+
       .descriptions {
         flex-direction: column;
       }
