@@ -27,7 +27,7 @@
     button {
       outline: none;
       height: 4rem;
-      width: 12rem;
+      width: 14rem;
       padding: 1rem;
       font-size: 1rem;
       font-weight: 800;
@@ -190,8 +190,8 @@
     z-index: 1;
 
     .buttons {
-      display: flex;
       width: 90%;
+      display: flex;
       justify-content: space-evenly;
 
       .disabled {
@@ -203,7 +203,7 @@
       button {
         outline: none;
         height: 4rem;
-        width: 10rem;
+        width: 8rem;
         padding: 1rem;
         font-size: 1rem;
         font-weight: 800;

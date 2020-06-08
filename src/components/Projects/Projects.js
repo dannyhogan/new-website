@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "@material-ui/core";
 import "./Projects.scss";
 import projects from "./projectData";
 
@@ -35,13 +36,11 @@ const Projects = () => {
         <h1 className="project-title">{project.title}</h1>
 
         <div className="project-container">
-
           <div className="project-image">
             <img className="active-project-image" src={project.image} />
           </div>
 
           <div className="active-project-content">
-
             <p className="project-description">{project.description}</p>
 
             <div className="active-project-tech">
@@ -62,9 +61,7 @@ const Projects = () => {
                 </button>
               </a>
             </div>
-            
           </div>
-
         </div>
       </div>
     );
@@ -74,12 +71,20 @@ const Projects = () => {
     <section className="Projects">
       <ActiveProject project={projects[activeIndex]} />
       <div className="buttons">
-        <button className={!isPrevProject && "disabled"} onClick={prevProject}>
+        <Button
+          variant="outlined"
+          className={!isPrevProject && "disabled"}
+          onClick={prevProject}
+        >
           Previous Project
-        </button>
-        <button className={!isNextProject && "disabled"} onClick={nextProject}>
+        </Button>
+        <Button
+          variant="outlined"
+          className={!isNextProject && "disabled"}
+          onClick={nextProject}
+        >
           Next Project
-        </button>
+        </Button>
       </div>
     </section>
   );
