@@ -11,7 +11,7 @@ const AboutMe = () => {
           <p>Danny Hogan - Full Stack Software Developer</p>
         </div>
         <p className="description-one">
-          As long as I can remember I've been fascinated by technology,
+          For as long as I can remember I've been fascinated by technology,
           computers, and the internet. It has been a natural evolution to take
           my passion for tech and turn it into a rewarding career.
         </p>
