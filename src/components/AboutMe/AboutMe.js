@@ -17,9 +17,8 @@ const AboutMe = () => {
         </p>
         <p className="description-one">
           I pride myself on being a tenacious full-stack developer, with a
-          designers eye and love for writing clean, maintainable, and elegant
-          code. I love to work collaboratively on teams - Let's build something
-          great!
+          designers eye and love for writing clean, maintainable code. I love to
+          work collaboratively on teams - Let's build something great!
         </p>
       </div>
     </section>
