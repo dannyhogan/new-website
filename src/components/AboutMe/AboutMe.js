@@ -1,10 +1,12 @@
 import React from "react";
 import "./AboutMe.scss";
 import me from "../../assets/me.png";
+import Particles from "react-particles-js";
 
 const AboutMe = () => {
   return (
     <section className="AboutMe">
+      <Particles className="particles" />
       <div className="about-content">
         <div className="me">
           <img src={me} />
