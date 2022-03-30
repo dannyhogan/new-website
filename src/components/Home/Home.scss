@@ -1,0 +1,45 @@
+$color1: #162447;
+$color2: #1f4068;
+$color3: #1b1b2f;
+$color4: #e43f5a;
+$color5: white;
+
+.Home {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .Home {
+    .parallax {
+      .name {
+        font-size: 2.5rem;
+        top: 8.5rem;
+      }
+    }
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

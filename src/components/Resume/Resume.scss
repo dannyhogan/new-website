@@ -1,0 +1,44 @@
+.Resume {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+
+  .resume-container {
+    height: 90%;
+    margin-top: 5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      color: white;
+      padding: 1rem;
+    }
+
+    img {
+      margin: 0 auto;
+      height: auto;
+      width: 50%;
+      border-radius: 10px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .Resume {
+    .resume-container {
+
+      img {
+        margin: 0 auto;
+        height: auto;
+        width: 85%;
+      }
+    }
+  }
+}

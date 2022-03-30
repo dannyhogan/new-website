@@ -1,0 +1,391 @@
+.Projects {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  animation: fade-down 1s forwards;
+  z-index: 1;
+
+  h1 {
+    margin: 0;
+  }
+
+  .buttons {
+    display: flex;
+    width: 75%;
+    justify-content: space-evenly;
+
+    .disabled {
+      opacity: 0.25;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
+    button {
+      outline: none;
+      height: 4rem;
+      width: 14rem;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: 800;
+      background-color: rgba(25, 25, 25, 0.25);
+      border-radius: 10px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: all 0.25s ease-out;
+      -webkit-tap-highlight-color: transparent;
+
+      &:hover {
+        transform: scale(1.05);
+        background-color: rgba(25, 25, 25, 0.5);
+        transition: all 0.25s ease-in;
+      }
+    }
+  }
+
+  .active-project {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem 0;
+    width: 75%;
+    height: 65%;
+    border-radius: 15px;
+    background-color: rgba(25, 25, 25, 0.25);
+    animation: fade-in-down 2s;
+
+    .project-title {
+      font-size: 1.75rem;
+      width: 100%;
+      height: max-content;
+      color: white;
+      margin: 1rem 0;
+    }
+
+    .project-container {
+      display: flex;
+
+      .project-image {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        margin: auto;
+
+        .active-project-image {
+          height: auto;
+          margin: 0 auto;
+          max-height: 90%;
+          max-width: 80%;
+        }
+      }
+    }
+
+    .active-project-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 50%;
+
+      .active-project-tech {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .project-tech-list {
+          display: flex;
+          flex-wrap: wrap;
+          list-style: none;
+          justify-content: center;
+          width: 100%;
+          height: 6rem;
+          overflow: hidden;
+          padding: 0;
+          margin: 0;
+
+          .project-tech-item {
+            margin: 0.25rem;
+            padding: 0.25rem;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            height: max-content;
+          }
+        }
+      }
+
+      .project-description {
+        width: 90%;
+        color: white;
+        font-size: 1.5rem;
+      }
+
+      .active-project-buttons {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          width: 45%;
+          padding: 0;
+          margin: 0;
+
+          button {
+            width: 100%;
+            height: 5rem;
+            font-size: 1rem;
+            font-weight: 800;
+            background-color: rgba(148, 148, 148, 0.1);
+            border-radius: 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.25s ease-out;
+
+            &:hover {
+              transform: scale(1.05);
+              background-color: rgba(25, 25, 25, 0.5);
+              transition: all 0.25s ease-in;
+            }
+
+            span {
+              display: flex;
+              flex-direction: column;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .active-project.prev {
+    animation: fade-in-right 2s;
+  }
+  .active-project.next {
+    animation: fade-in-left 2s;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 1;
+    animation: fade-down 1s forwards;
+    z-index: 1;
+
+    .buttons {
+      width: 90%;
+      display: flex;
+      justify-content: space-evenly;
+
+      .disabled {
+        opacity: 0.25;
+        pointer-events: none;
+        cursor: not-allowed;
+      }
+
+      button {
+        outline: none;
+        height: 4rem;
+        width: 8rem;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 800;
+        background-color: rgba(25, 25, 25, 0.25);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        transition: all 0.25s ease-out;
+        -webkit-tap-highlight-color: transparent;
+
+        &:hover {
+          transform: scale(1.05);
+          background-color: rgba(25, 25, 25, 0.5);
+          transition: all 0.25s ease-in;
+        }
+      }
+    }
+
+    .active-project {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 2rem 0;
+      width: 90%;
+      height: 70%;
+      border-radius: 15px;
+      background-color: rgba(25, 25, 25, 0.25);
+      animation: fade-in-down 2s;
+
+      .project-title {
+        font-size: 1.75rem;
+        margin: 1rem 0rem;
+        width: 100%;
+        height: max-content;
+        color: white;
+      }
+
+      .project-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-y: scroll;
+
+        .project-image {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          width: 90%;
+          height: 100%;
+
+          .active-project-image {
+            height: auto;
+            margin: 0 auto;
+            max-height: 90%;
+            max-width: 80%;
+          }
+        }
+      }
+
+      .active-project-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+
+        .active-project-tech {
+          display: flex;
+          flex-direction: column;
+
+          .project-tech-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            width: 90%;
+            height: 6rem;
+            overflow-y: scroll;
+            padding: 0;
+
+            .project-tech-item {
+              margin: 0.25rem;
+              padding: 0.25rem;
+              color: white;
+              border: 1px solid white;
+              border-radius: 5px;
+              height: max-content;
+            }
+          }
+        }
+
+        .project-description {
+          width: 90%;
+          color: white;
+          font-size: 1rem;
+        }
+
+        .active-project-buttons {
+          width: 90%;
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            width: 45%;
+            padding: 0;
+            margin: 0;
+
+            button {
+              width: 100%;
+              height: 3rem;
+              font-size: 1rem;
+              font-weight: 800;
+              background-color: rgba(148, 148, 148, 0.1);
+              border-radius: 10px;
+              border: none;
+              cursor: pointer;
+              outline: none;
+              transition: all 0.25s ease-out;
+              color: white;
+
+              span {
+                display: flex;
+                flex-direction: column;
+                font-weight: 400;
+              }
+
+              &:hover {
+                transform: scale(1.05);
+                transition: all 0.25s ease-in;
+                background-color: rgba(25, 25, 25, 0.5);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .active-project.prev {
+      animation: fade-in-right 2s;
+    }
+    .active-project.next {
+      animation: fade-in-left 2s;
+    }
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fade-in-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
