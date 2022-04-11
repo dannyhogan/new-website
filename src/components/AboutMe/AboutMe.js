@@ -12,24 +12,23 @@ const AboutMe = () => {
         <div className="me">
           <img src={me} alt="Self portrait" />
           <p className="name">Danny Hogan</p>
-          <p className="title">Software Engineer</p>
+          <p className="title">Full-Stack Software Engineer</p>
           <a href="https://www.linkedin.com/in/danny-hogan/" target="_blank">
-            Looking for opportunities!
+            Seeking opportunities!
             <FaLinkedin style={{ padding: 0, margin: '0px 5px', transform: 'translateY(2px)' }}/>
           </a>
         </div>
         <hr />
         <p className="description-one">
-          I'm a full-stack JavaScript developer focused on team collaboration and continuous learning.
+          Tenacious Senior Software Engineer with experience in the fintech and medtech sectors.
         </p>
 
         <p className="description-one">
-          I pride myself on being a tenacious developer, with a
-          graphic designers eye and love for writing clean, maintainable code.
+          Recognized for designing and developing intuitive investor dashboards and automating client systems.
+          Accomplished in writing scalable, well-documented, clean code.
         </p>
         <p className="description-one">
-          If I'm not coding or learning something new, I enjoy traveling, hiking, snowboarding,
-          playing basketball, and spending time with family and friends.
+          Creative, solutution oriented team-player with strong debugging and problem solving skills.
         </p>
       </div>
     </section >
