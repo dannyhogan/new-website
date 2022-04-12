@@ -20,7 +20,7 @@ const AboutMe = () => {
         </div>
         <hr />
         <p className="description-one">
-          Tenacious Senior Software Engineer with experience in the fintech and medtech sectors.
+          Tenacious full-stack developer with experience in the fintech and medtech sectors.
         </p>
 
         <p className="description-one">
