@@ -1,7 +1,10 @@
 import React from "react";
 import "./AboutMe.scss";
-import me from "../../assets/me.png";
+import me from "../../assets/me.jpg";
 import { FaLinkedin } from 'react-icons/fa';
+
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
 
 
 
@@ -13,10 +16,10 @@ const AboutMe = () => {
           <img src={me} alt="Self portrait" />
           <p className="name">Danny Hogan</p>
           <p className="title">Full-Stack Software Engineer</p>
-          <a href="https://www.linkedin.com/in/danny-hogan/" target="_blank">
+          <AwesomeButton href="https://www.linkedin.com/in/danny-hogan/" target="_blank">
             Seeking opportunities!
-            <FaLinkedin style={{ padding: 0, margin: '0px 5px', transform: 'translateY(2px)' }}/>
-          </a>
+            <FaLinkedin style={{ padding: 0, margin: '0px 5px', transform: 'translateY(2px)' }} />
+          </AwesomeButton>
         </div>
         <hr />
         <p className="description">
