@@ -54,8 +54,8 @@ const Projects = () => {
                   Deployed on Netlify
                 </AwesomeButton>
               </a>
-              <a target="_blank" className="project-button" rel="noopener noreferrer" href={project.github}>
-                <AwesomeButton type="primary">
+              <a target="_blank" rel="noopener noreferrer" href={project.github}>
+                <AwesomeButton className="project-button" type="primary">
                   Source Code (Github)
                 </AwesomeButton>
               </a>

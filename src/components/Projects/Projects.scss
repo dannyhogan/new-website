@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   opacity: 1;
-  animation: fade-down 1s forwards;
+  animation: fade-in-left 1s forwards;
   z-index: 1;
 
 
@@ -83,7 +83,6 @@
         align-content: center;
         justify-content: center;
         width: 50%;
-        height: 100%;
         margin: auto;
 
         .active-project-image {
@@ -211,24 +210,44 @@
       align-items: center;
       margin: 2rem 0;
       width: 90%;
-      height: 70%;
+      height: 80%;
       border-radius: 15px;
       background-color: rgba(25, 25, 25, 0.25);
-      animation: fade-in-down 2s;
+      animation: fade-in-left 2s;
 
       .project-title {
         font-size: 1.75rem;
-        margin: 1rem 0rem;
         width: 100%;
+        height: 20%;
         height: max-content;
         color: white;
+        position: relative;
+        
+        &:after {
+          display: flex;
+          justify-content: center;
+          
+          content: '';
+          text-align: center;
+          width: 80%;
+          position: absolute;
+          left: 10%;
+          bottom: -10px;
+          border-color: rgba(255, 255, 255, 0.5);
+          border-width: 0 0 3px;
+          border-style: solid;
+        }
       }
 
       .project-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 100%;
+        height: 80%;
         overflow-y: scroll;
+        margin: 0;
 
         .project-image {
           display: flex;
@@ -236,7 +255,7 @@
           align-content: center;
           justify-content: center;
           width: 90%;
-          height: 100%;
+          margin: 1rem auto;
 
           .active-project-image {
             height: auto;
@@ -265,7 +284,7 @@
             flex-wrap: wrap;
             list-style: none;
             width: 90%;
-            height: 6rem;
+            height: 8rem;
             overflow-y: scroll;
             padding: 0;
 
@@ -290,7 +309,13 @@
           width: 90%;
           display: flex;
           justify-content: space-between;
+          height: 15rem;
+          margin: 2rem 0;
 
+          .project-button.aws-btn {
+            height: 60px;
+            --button-default-height: 60px;
+          }
         }
       }
     }
