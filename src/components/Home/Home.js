@@ -19,7 +19,7 @@ const Home = ({ toggleNavbar }) => {
 
   useEffect(() => {
 
-    if (scrollValue > 700) {
+    if (scrollValue > 600) {
       toggleNavbar(true);
     } else {
       toggleNavbar(false)

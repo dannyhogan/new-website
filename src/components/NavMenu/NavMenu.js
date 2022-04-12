@@ -18,7 +18,7 @@ const NavMenu = ({ hideNavbar }) => {
         onClick={handleClick}>
         {open ? <IoMdClose /> : <AiOutlineMenu />}
       </button>
-      <nav className="top-menu" style={{ top: `${hideNavbar ? '-60px' : '0px'}` }}>
+      <nav className="top-menu" style={{ top: `${hideNavbar ? '-70px' : '0px'}` }}>
         <ul>
           <li>
             <NavLink exact to="/">
@@ -39,9 +39,7 @@ const NavMenu = ({ hideNavbar }) => {
           </li>
         </ul>
       </nav>
-      <nav
-        className="side-menu"
-        >
+      <nav className="side-menu">
         <ul>
           <li onClick={handleClick}>
             <NavLink exact to="/">

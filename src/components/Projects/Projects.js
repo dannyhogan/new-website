@@ -45,7 +45,7 @@ const Projects = () => {
             <p className="project-description">{project.description}</p>
 
             <div className="active-project-tech">
-              <ul className="project-tech-list">{techItems}</ul>
+              {techItems.length > 0 && (<ul className="project-tech-list">{techItems}</ul>)}
             </div>
 
             <div className="active-project-buttons">
