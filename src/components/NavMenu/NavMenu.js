@@ -1,19 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 import "./NavMenu.scss";
 
-const NavMenu = () => {
+const NavMenu = ({ hideNavbar }) => {
   const [open, toggleOpen] = useState(false);
   const handleClick = () => toggleOpen((open) => !open);
 
+
+
   return (
     <div className={`NavMenu ${open ? "open" : "closed"}`}>
-      <button className="toggle-button" onClick={handleClick}>
+      <button
+        style={{ display: `${hideNavbar ? 'block' : 'none'}` }}
+        className="toggle-button"
+        onClick={handleClick}>
         {open ? <IoMdClose /> : <AiOutlineMenu />}
       </button>
-      <nav className="top-menu">
+      <nav className="top-menu" style={{ top: `${hideNavbar ? '-60px' : '0px'}` }}>
         <ul>
           <li>
             <NavLink exact to="/">
@@ -34,7 +39,9 @@ const NavMenu = () => {
           </li>
         </ul>
       </nav>
-      <nav className="side-menu">
+      <nav
+        className="side-menu"
+        style={{ display: `${hideNavbar ? 'flex' : 'none'}` }}>
         <ul>
           <li onClick={handleClick}>
             <NavLink exact to="/">

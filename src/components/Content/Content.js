@@ -7,11 +7,11 @@ import Home from "../Home/Home";
 import Tech from "../Tech/Tech";
 import Resume from "../Resume/Resume";
 
-const Content = () => {
+const Content = ({ toggleNavbar }) => {
   return (
     <div className="Content">
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" render={() => <Home toggleNavbar={toggleNavbar} />} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
         <Route path="/tech" component={Tech} />

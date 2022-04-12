@@ -19,15 +19,15 @@ const AboutMe = () => {
           </a>
         </div>
         <hr />
-        <p className="description-one">
-          Tenacious full-stack developer with experience in the fintech and medtech sectors.
+        <p className="description">
+          Tenacious full-stack software engineer with experience in the fintech and medtech sectors.
         </p>
 
-        <p className="description-one">
+        <p className="description">
           Recognized for designing and developing intuitive investor dashboards and automating client systems.
           Accomplished in writing scalable, well-documented, clean code.
         </p>
-        <p className="description-one">
+        <p className="description">
           Creative, solutution oriented team-player with strong debugging and problem solving skills.
         </p>
       </div>

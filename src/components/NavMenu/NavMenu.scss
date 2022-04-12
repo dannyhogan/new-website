@@ -42,6 +42,7 @@ $color5: #ebebeb;
     justify-content: flex-end;
     align-items: center;
     z-index: 10;
+    transition: all .75s ease;
 
     ul {
       display: flex;
@@ -167,7 +168,7 @@ $color5: #ebebeb;
     bottom: 20px;
 
     .toggle-button {
-      display: block;
+      display: block !important;
     }
 
     .side-menu {
