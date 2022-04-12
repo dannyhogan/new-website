@@ -58,7 +58,7 @@
     height: 65%;
     border-radius: 15px;
     background-color: rgba(25, 25, 25, 0.25);
-    animation: fade-in-right 2s;
+    animation: fade-in-left 2s;
 
     .project-title {
       font-size: 1.75rem;
@@ -187,7 +187,7 @@
     justify-content: flex-start;
     align-items: center;
     opacity: 1;
-    animation: fade-down 1s forwards;
+    animation: fade-in-left 1s forwards;
     z-index: 1;
 
     .buttons {
