@@ -2,20 +2,21 @@ import React, { useState } from "react";
 import { Button } from "@material-ui/core";
 import "./Projects.scss";
 import projects from "./projectData";
+import { AwesomeButton } from 'react-awesome-button';
 
 const Projects = () => {
   const [className, setClassName] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
 
   const nextProject = () => {
-    if(projects[activeIndex + 1]) {
+    if (projects[activeIndex + 1]) {
       setClassName("next");
       setActiveIndex((index) => index + 1);
     }
   };
 
   const prevProject = () => {
-    if(activeIndex !== 0 && projects[activeIndex - 1]) {
+    if (activeIndex !== 0 && projects[activeIndex - 1]) {
       setClassName("prev");
       setActiveIndex((index) => index - 1);
     }
@@ -49,16 +50,14 @@ const Projects = () => {
 
             <div className="active-project-buttons">
               <a target="_blank" rel="noopener noreferrer" href={project.deployed}>
-                <button>
-                  Deployed on
-                  <span>{project.deployedOn}</span>
-                </button>
+                <AwesomeButton className="project-button" type="primary">
+                  Deployed on Netlify
+                </AwesomeButton>
               </a>
-              <a target="_blank" rel="noopener noreferrer" href={project.github}>
-                <button>
-                  Source Code
-                  <span>GitHub</span>
-                </button>
+              <a target="_blank" className="project-button" rel="noopener noreferrer" href={project.github}>
+                <AwesomeButton type="primary">
+                  Source Code (Github)
+                </AwesomeButton>
               </a>
             </div>
           </div>
@@ -71,20 +70,20 @@ const Projects = () => {
     <section className="Projects">
       <ActiveProject project={projects[activeIndex]} />
       <div className="buttons">
-        <Button
-          variant="outlined"
+        <AwesomeButton
+          variant="primary"
           className={!isPrevProject && "disabled"}
-          onClick={prevProject}
+          onPress={prevProject}
         >
           Previous
-        </Button>
-        <Button
-          variant="outlined"
+        </AwesomeButton>
+        <AwesomeButton
+          variant="primary"
           className={!isNextProject && "disabled"}
-          onClick={nextProject}
+          onPress={nextProject}
         >
           Next
-        </Button>
+        </AwesomeButton>
       </div>
     </section>
   );

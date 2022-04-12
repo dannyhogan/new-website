@@ -16,17 +16,20 @@ $color5: white;
 
   h1 {
     color: white;
-    margin-top: 4rem;
+    margin-top: 5rem;
     animation: fade-in 2s forwards;
   }
 
   .tech-lists {
     height: 80%;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 0;
 
     .tech-list {
       display: flex;
@@ -38,6 +41,9 @@ $color5: white;
       list-style: none;
       width: 80%;
       height: 40%;
+      border-radius: 10px;
+      background-color: rgba(187, 187, 187, 0.25);
+      
 
       h3 {
         color: white;
@@ -51,9 +57,10 @@ $color5: white;
         list-style: none;
         background-color: rgba(25, 25, 25, 0.25);
         overflow: hidden;
-        width: 100%;
+        width: 95%;
         height: 100%;
         border-radius: 10px;
+        overflow-x: scroll;
 
         li {
           display: flex;
@@ -113,8 +120,8 @@ $color5: white;
         justify-content: flex-start;
         align-items: flex-start;
         list-style: none;
-        width: 90%;
-        margin: 0;
+        width: 80%;
+        margin: .5rem 0;
         min-height: 12rem;
 
         h3 {
@@ -141,7 +148,7 @@ $color5: white;
             align-items: center;
             color: white;
             height: 90%;
-            min-width: 5rem;
+            min-width: 4rem;
 
             .tech-image {
               width: 3rem;

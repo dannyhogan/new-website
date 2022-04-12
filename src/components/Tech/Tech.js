@@ -105,7 +105,7 @@ const Tech = () => {
 
   return (
     <section className="Tech">
-      <h1 className="tech-header">Technologies I Love</h1>
+      <h1 className="tech-header">Technologies</h1>
       <ul className="tech-lists">{TechStackList}</ul>
     </section>
   );
