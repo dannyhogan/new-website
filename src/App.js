@@ -8,8 +8,6 @@ function App() {
 
   const [hideNavbar, toggleNavbar] = useState(false);
 
-  console.log('hide nav bar??', hideNavbar)
-
   return (
     <div className="App">
       <NavMenu hideNavbar={hideNavbar} />
