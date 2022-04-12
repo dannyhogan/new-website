@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.17.9",
+    "@babel/helper-define-map": "^7.16.7",
     "@babel/helper-get-function-arity": "^7.16.7",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
