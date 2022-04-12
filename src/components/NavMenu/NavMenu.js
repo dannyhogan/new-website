@@ -41,7 +41,7 @@ const NavMenu = ({ hideNavbar }) => {
       </nav>
       <nav
         className="side-menu"
-        style={{ display: `${hideNavbar ? 'flex' : 'none'}` }}>
+        >
         <ul>
           <li onClick={handleClick}>
             <NavLink exact to="/">
