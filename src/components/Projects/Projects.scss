@@ -113,7 +113,6 @@
           list-style: none;
           justify-content: center;
           width: 100%;
-          height: 6rem;
           overflow: hidden;
           padding: 0;
           margin: 0;
@@ -132,14 +131,14 @@
       .project-description {
         width: 90%;
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
       }
 
       .active-project-buttons {
         width: 90%;
         display: flex;
         justify-content: space-between;
-
+        margin: 1rem 0;
 
         .aws-btn {
           --button-default-height: 75px;
@@ -206,19 +205,18 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
-      margin: 2rem 0;
+      margin: 1rem 0;
       width: 90%;
-      height: 80%;
+      height: 70%;
       border-radius: 15px;
       background-color: rgba(25, 25, 25, 0.25);
       animation: fade-in-left 2s;
 
       .project-title {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         width: 100%;
-        height: 20%;
         height: max-content;
         color: white;
         position: relative;
@@ -281,16 +279,14 @@
           .project-tech-list {
             display: flex;
             justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
             list-style: none;
             width: 90%;
-            height: 8rem;
             overflow-y: scroll;
             padding: 0;
 
             .project-tech-item {
-              margin: 0.25rem;
-              padding: 0.25rem;
               color: white;
               border: 1px solid white;
               border-radius: 5px;
@@ -310,7 +306,7 @@
           display: flex;
           justify-content: space-between;
           height: 15rem;
-          margin: 2rem 0;
+          margin: 1rem 0;
 
           .project-button.aws-btn {
             height: 60px;
