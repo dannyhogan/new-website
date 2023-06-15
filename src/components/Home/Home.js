@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import AboutMe from "../AboutMe/AboutMe";
 import Landing from "../Landing/Landing";
+import Experience from "../Experience/Experience";
 import "./Home.scss";
 
 const Home = ({ toggleNavbar }) => {
@@ -35,6 +36,7 @@ const Home = ({ toggleNavbar }) => {
     <div className="Home" ref={myRef} onScroll={handleScroll}>
       <Landing />
       <AboutMe />
+      <Experience />
     </div>
   );
 };

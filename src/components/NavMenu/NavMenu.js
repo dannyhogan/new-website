@@ -21,21 +21,16 @@ const NavMenu = ({ hideNavbar }) => {
       <nav className="top-menu" style={{ top: `${hideNavbar ? '-70px' : '0px'}` }}>
         <ul>
           <li>
-            <NavLink exact to="/">
-              HOME
-            </NavLink>
+            <NavLink exact to="/"><span>01.</span>About</NavLink>
           </li>
           <li>
-            <NavLink to="/projects">PROJECTS</NavLink>
+            <NavLink to="/experience"><span>02. </span>Experience</NavLink>
           </li>
           <li>
-            <NavLink to="/resume">RESUME</NavLink>
+            <NavLink to="/resume"><span>03. </span>Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/tech">TECH</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">CONTACT</NavLink>
+            <NavLink to="/tech">Resume</NavLink>
           </li>
         </ul>
       </nav>
@@ -47,7 +42,7 @@ const NavMenu = ({ hideNavbar }) => {
             </NavLink>
           </li>
           <li onClick={handleClick}>
-            <NavLink to="/projects">PROJECTS</NavLink>
+            <NavLink to="/experience">EXPERIENCE</NavLink>
           </li>
           <li onClick={handleClick}>
             <NavLink to="/resume">RESUME</NavLink>

@@ -1,13 +1,19 @@
-.Projects {
-  width: 100%;
-  height: 100%;
+.Experience {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 1;
-  animation: fade-in-left 1s forwards;
   z-index: 1;
+  border: 2px solid red;
+
+  .header {
+    display: flex;
+
+    h3 {
+      white-space: nowrap;
+    }
+  }
 
 
   h1 {
@@ -16,40 +22,10 @@
 
   .buttons {
     display: flex;
-    width: 75%;
+    flex-direction: column;
+    width: 10rem;
     justify-content: space-evenly;
 
-    .disabled {
-      opacity: 0.25;
-      pointer-events: none;
-      cursor: not-allowed;
-    }
-
-    .aws-btn {
-      --button-default-height: 50px;
-      --button-default-font-size: 14px;
-      --button-default-border-radius: 6px;
-      --button-horizontal-padding: 20px;
-      --button-raise-level: 9px;
-      --button-hover-pressure: 2;
-      --transform-speed: 0.185s;
-      --button-primary-color: #475472;
-      --button-primary-color-dark: #2a3143;
-      --button-primary-color-light: #d4d9e4;
-      --button-primary-color-hover: #424e6a;
-      --button-primary-border: none;
-      --button-secondary-color: #fffc6c;
-      --button-secondary-color-dark: #b9b500;
-      --button-secondary-color-light: #6c6a00;
-      --button-secondary-color-hover: #fffb3e;
-      --button-secondary-border: none;
-      --button-anchor-color: #f3c8ad;
-      --button-anchor-color-dark: #734922;
-      --button-anchor-color-light: #4c3016;
-      --button-anchor-color-hover: #f1bfa0;
-      --button-anchor-border: 1px solid #8c633c;
-      margin: 0px .5rem;
-    }
   }
 
   .active-project {
@@ -64,7 +40,6 @@
     border-radius: 15px;
     background-color: rgba(25, 25, 25, 0.25);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    animation: fade-in-left 2s;
 
     .project-title {
       font-size: 1.75rem;

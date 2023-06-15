@@ -1,7 +1,7 @@
 import React from "react";
 import "./Content.scss";
 import { Switch, Route } from "react-router-dom";
-import Projects from "../Projects/Projects";
+import Experience from "../Experience/Experience";
 import Contact from "../Contact/Contact";
 import Home from "../Home/Home";
 import Tech from "../Tech/Tech";
@@ -12,7 +12,7 @@ const Content = ({ toggleNavbar }) => {
     <div className="Content">
       <Switch>
         <Route exact path="/" render={() => <Home toggleNavbar={toggleNavbar} />} />
-        <Route path="/projects" component={Projects} />
+        <Route path="/experience" component={Experience} />
         <Route path="/contact" component={Contact} />
         <Route path="/tech" component={Tech} />
         <Route path="/resume" component={Resume} />
