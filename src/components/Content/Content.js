@@ -10,13 +10,15 @@ import Resume from "../Resume/Resume";
 const Content = ({ toggleNavbar }) => {
   return (
     <div className="Content">
-      <Switch>
+      <p>Coming soon.</p>
+      {/* <Switch>
+
         <Route exact path="/" render={() => <Home toggleNavbar={toggleNavbar} />} />
         <Route path="/experience" component={Experience} />
         <Route path="/contact" component={Contact} />
         <Route path="/tech" component={Tech} />
         <Route path="/resume" component={Resume} />
-      </Switch>
+      </Switch> */}
     </div>
   );
 };
